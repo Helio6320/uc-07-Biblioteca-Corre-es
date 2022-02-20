@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Biblioteca.Models;
 
 namespace Biblioteca.Models
 {
@@ -12,5 +13,6 @@ namespace Biblioteca.Models
 
         public DbSet<Livro> Livros {get; set;}
         public DbSet<Emprestimo> Emprestimos {get; set;}
+        public DbSet<Usuario> Usuarios {get; set;}
     }
 }
